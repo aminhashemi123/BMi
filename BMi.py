@@ -1,11 +1,17 @@
+import os
 import customtkinter as ctk
 from tkinter import messagebox
+
+current_dir=os.path.dirname(os.path.abspath(__file__))
+icon_path = os.path.join(current_dir,"10481311.ico")
+
+
 
 ctk.set_appearance_mode("dark")
 
 app = ctk.CTk()
 app.title("BMI")
-app.iconbitmap("10481311.ico")
+app.iconbitmap(icon_path)
 app.geometry("400x350+700+150")
 
 # Function for "ورود" button
